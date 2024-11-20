@@ -1,0 +1,99 @@
+h1 {
+    text-align: center;
+    font-size: 8ex;
+}
+
+.timer{
+    /* border: 2px solid black; */
+    text-align: right;
+    font-weight: bold;
+}
+
+.game-board {
+    border: 2px solid rgb(63, 63, 63);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Keep 4 cards per row */
+    gap:6px; /* Reduce spacing between cards */
+    padding: 5px; /* Reduce padding around the game board */
+    justify-items: center;
+}
+
+.game-board img {
+    width: 110px; /* Larger width */
+    height: 150px; /* Larger height */
+    object-fit: contain;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.game-board img.selected {
+    border-color: blue;
+    transform: scale(1.05);
+}
+
+.rules {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: auto 32%;
+    padding: 10px;
+}
+
+.rules li {
+    list-style: none;
+}
+
+button:disabled {
+    pointer-events: none; 
+}
+
+#start-game-button {
+    background-color: white;
+    border: 2px solid #04AA6D;
+    cursor: pointer;
+}
+
+#finish-game-button {
+    background-color: white;
+    border: 2px solid #ff3232;
+    cursor: pointer;
+}
+
+#confirm-button {
+    background-color: white;
+    border: 2px solid #32aaff;
+    cursor: pointer;
+    
+}
+
+#status-message{
+    font-size: 1.5em;
+    margin-top: 1%;
+}
+
+.game-controls {
+    margin: auto;
+    margin-top: 1.5%;
+    white-space: nowrap;
+    width: auto;
+    font-size: 3ex;
+    text-align: center;
+
+}
+
+.game-controls button{
+    margin-left: 1.5%;
+    
+}
+
+.timer {
+    font-size: 4ex;
+}
+
+.grid-container {
+    margin-top: 1.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    /* border: 2px solid black; */
+}
